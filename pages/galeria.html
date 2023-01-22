@@ -11,7 +11,7 @@
 </head>
 <body class="pages">
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -25,7 +25,7 @@
                 <a class="nav-link" href="servicios.html">Servicios</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="galeria.html">Galería</a>
+                <a class="nav-link active" href="galeria.html">Galería</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link" href="recetas.html">Recetas</a>
@@ -39,20 +39,54 @@
         </nav>
     </header>  
 
-    <div class="galeria">
-        <img src="../img/galeria/cumpleaños-1.jpg" alt="Torta de cumpleaños">
-        <img src="../img/galeria/cumpleaños-2.jpg" alt="Mesa de postre">
-        <img src="../img/galeria/salado-1.jpg" alt="Goulash">
-        <img src="../img/galeria/salado-2.jpg" alt="Arrollado de pollo">
-        <!--<img src="../img/galeria/salado-3.jpg" alt="Risotto">-->
-        <img src="../img/galeria/salado-4.jpg" alt="Fideos con verduras">
-        <img src="../img/galeria/salado-5.jpg" alt="Paella">
-        <!--<img src="../img/galeria/postre-1.jpg" alt="Postres individuales">-->
-        <img src="../img/galeria/postre-2.jpg" alt="Chocotorta">
-        <img src="../img/galeria/postre-3.jpg" alt="Flan">
-        <img src="../img/galeria/postre-4.jpg" alt="Lemon pie">
-        <!--<img src="../img/galeria/postre-5.jpg" alt="Pera al vino">-->
-    </div>
+    <div id="carouselExampleIndicators" class="carousel slide mx-auto">
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="../img/galeria/cumpleaños-1.jpg" class="d-block w-100" alt="Torta de cumpleaños">
+        </div>
+        <div class="carousel-item">
+            <img src="../img/galeria/cumpleaños-2.jpg" class="d-block w-100" alt="Mesa de postre">
+        </div>
+        <div class="carousel-item">
+            <img src="../img/galeria/salado-1.jpg" class="d-block w-100" alt="Goulash">
+        </div>
+        <div class="carousel-item">
+            <img src="../img/galeria/salado-2.jpg" class="d-block w-100" alt="Arrollado de pollo">
+        </div>
+        <div class="carousel-item">
+            <img src="../img/galeria/salado-3.jpg" class="d-block w-100" alt="Risotto">
+        </div>
+        <div class="carousel-item">
+            <img src="../img/galeria/salado-4.jpg" class="d-block w-100" alt="Fideos con verduras">
+        </div>
+        <div class="carousel-item">
+            <img src="../img/galeria/salado-5.jpg" class="d-block w-100" alt="Paella">
+        </div>
+        <div class="carousel-item">
+            <img src="../img/galeria/postre-1.jpg" class="d-block w-100" alt="Postres individuales">
+        </div>
+        <div class="carousel-item">
+            <img src="../img/galeria/postre-2.jpg" class="d-block w-100" alt="Chocotorta">
+        </div>
+        <div class="carousel-item">
+            <img src="../img/galeria/postre-3.jpg" class="d-block w-100" alt="Flan">
+        </div>
+        <div class="carousel-item">
+            <img src="../img/galeria/postre-4.jpg" class="d-block w-100" alt="Lemonpie">
+        </div>
+        <div class="carousel-item">
+            <img src="../img/galeria/postre-5.jpg" class="d-block w-100" alt="Pera al vino">
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+        </button>
+        </div>
 
 
 
@@ -71,13 +105,13 @@
 
 
 
-    <footer>
-        <p>Todos los derechos reservados ©</p>
-        <section class="links">
-        <a title="youtube" href="https://www.youtube.com/@pablogiordano2828" target="_blank"><img id="youtube" src="../img/youtube.png" alt="Youtube"/></a>
-        <a title="instagram" href="https://www.instagram.com/pablogiordanocarissimi/" target="_blank"><img id="instagram" src="../img/instagram.png" alt="Instagram"/></a>
-        </section>
-    </footer>
+        <footer class="container p-4 rounded">
+            <div class="d-flex">
+                <div class="p-2 flex-grow-1">Todos los derechos reservados ©</div>
+                <div class="p-2 links"><a title="youtube" href="https://www.youtube.com/@pablogiordano2828" target="_blank"><img id="youtube" src="../img/youtube.png" alt="Youtube"/></a></div>
+                <div class="p-2 links"><a title="instagram" href="https://www.instagram.com/pablogiordanocarissimi/" target="_blank"><img id="instagram" src="../img/instagram.png" alt="Instagram"/></a></div>
+              </div>
+          </footer>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
