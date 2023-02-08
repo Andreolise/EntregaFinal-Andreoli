@@ -1,0 +1,26 @@
+.servicios {
+    color:black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+.grow { 
+    transition: all .2s ease-in-out; 
+    }
+    .grow:hover { 
+    transform: scale(1.3); 
+    }
+
+.servicios img{
+        height: 300px;
+        width: 540px;
+        padding: 6px;
+    }
+
+@media (min-width: 768px) {
+    .servicios img {
+        height: 180px;
+        width: 500px;
+        padding: 6px;}
+    }
