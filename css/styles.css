@@ -171,4 +171,8 @@ footer {
   height: 50px;
 }
 
+#indeximg img {
+  max-height: 40rem;
+}
+
 /*# sourceMappingURL=styles.css.map */
