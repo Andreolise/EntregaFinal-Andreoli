@@ -122,7 +122,7 @@
 }
 
 body {
-  background-image: url("../img/background-index.jpg");
+  background-image: url("../img/index.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   font-family: "Montserrat", sans-serif;
@@ -133,7 +133,7 @@ body {
 }
 
 .pages {
-  background-image: url("../img/background-pages.jpg");
+  background-image: url("../img/pages.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
