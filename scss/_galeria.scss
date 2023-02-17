@@ -7,35 +7,13 @@ $pantallas: (
 @mixin media-up($pantalla){
     @media screen and (min-width: map-get($pantallas, $pantalla)) {
         @content;
-        
     }
 }
 
 .carousel-item img {
-        height: 300px;
-        width: 300px;
-        border-radius: 4%;
-        @include media-up(mm){
-            height: 360px;
-            width: 360px;
-        }
-        @include media-up(ml){
-            height: 415px;
-            width: 415px;
-        
-        }
-        @include media-up(sm){
-            height: 760px;
-            width: 760px;
-        
-        }
-    }
-
-#carouselExampleIndicators{
     height: 300px;
     width: 300px;
-    border-radius: 10%;
-    padding-top: 10rem;
+    border-radius: 4%;
     @include media-up(mm){
         height: 360px;
         width: 360px;
@@ -43,21 +21,41 @@ $pantallas: (
     @include media-up(ml){
         height: 415px;
         width: 415px;
-        padding-top: 9rem;
     }
     @include media-up(sm){
-        height: 760px;
-        width: 760px;
-        padding-top: 1rem;
+        height: 650px;
+        width: 650px;
+        padding-top: 0rem;
+    }
+}
+
+#carouselExampleIndicators{
+    height: 300px;
+    width: 300px;
+    border-radius: 10%;
+    padding-top: 5rem;
+    @include media-up(mm){
+        height: 360px;
+        width: 360px;
+    }
+    @include media-up(ml){
+        height: 415px;
+        width: 415px;
+        padding-top: 4rem;
+    }
+    @include media-up(sm){
+        height: 650px;
+        width: 650px;
+        padding-top: 0rem;
     }
 }
 
 .carousel-control-next-icon, .carousel-control-prev-icon {
     background-color: rgb(150, 150, 150);
     border-radius: 10%;
-    margin-top: 20rem;
+    margin-top: 10rem;
     @include media-up(ml){
-    margin-top: 18rem;
+        margin-top: 8rem;
     }
     @include media-up(sm){
         margin-top: 1rem;

@@ -67,8 +67,9 @@
 }
 @media screen and (min-width: 426px) {
   .carousel-item img {
-    height: 760px;
-    width: 760px;
+    height: 650px;
+    width: 650px;
+    padding-top: 0rem;
   }
 }
 
@@ -76,7 +77,7 @@
   height: 300px;
   width: 300px;
   border-radius: 10%;
-  padding-top: 10rem;
+  padding-top: 5rem;
 }
 @media screen and (min-width: 321px) {
   #carouselExampleIndicators {
@@ -88,25 +89,25 @@
   #carouselExampleIndicators {
     height: 415px;
     width: 415px;
-    padding-top: 9rem;
+    padding-top: 4rem;
   }
 }
 @media screen and (min-width: 426px) {
   #carouselExampleIndicators {
-    height: 760px;
-    width: 760px;
-    padding-top: 1rem;
+    height: 650px;
+    width: 650px;
+    padding-top: 0rem;
   }
 }
 
 .carousel-control-next-icon, .carousel-control-prev-icon {
   background-color: rgb(150, 150, 150);
   border-radius: 10%;
-  margin-top: 20rem;
+  margin-top: 10rem;
 }
 @media screen and (min-width: 376px) {
   .carousel-control-next-icon, .carousel-control-prev-icon {
-    margin-top: 18rem;
+    margin-top: 8rem;
   }
 }
 @media screen and (min-width: 426px) {
@@ -135,11 +136,6 @@ body {
   background-image: url("../img/background-pages.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-header {
-  display: flex;
-  justify-content: space-around;
 }
 
 .navbar-toggler {
@@ -173,6 +169,21 @@ footer {
 
 #indeximg img {
   max-height: 40rem;
+}
+@media screen and (max-width: 321px) {
+  #indeximg img {
+    margin-top: 40rem;
+  }
+}
+@media screen and (max-width: 376px) {
+  #indeximg img {
+    margin-top: 25rem;
+  }
+}
+@media screen and (max-width: 426px) {
+  #indeximg img {
+    margin-top: 10rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -20,17 +20,15 @@ $color-principal: whitesmoke;
     flex-direction: column;
     min-height: 100vh;
   }
+
 //Modificaciones de fondo para las pages
   .pages {
     background-image: url("../img/background-pages.jpg");
     background-size: cover;
     background-repeat: no-repeat;
   }
+
 //Estilos barra de navegación
-header {
-  display: flex;
-  justify-content: space-around;
-}
   .navbar-toggler {
     background-color: rgb(210, 210, 210);
     border: solid 1px rgb(90,90, 90);
@@ -41,6 +39,7 @@ header {
     background-color: rgb(90,90, 90);
     font-family:'Montserrat', sans-serif;
   }
+
 //Estilos del footer
 footer {
   margin-top: auto ;
@@ -57,7 +56,28 @@ footer {
     height: 50px;
   }
 
-//Tamaño imagen de inicio
+//Estilos imagen de inicio
+$pantallas: (
+    mm : 321px,
+    ml : 376px,    
+    sm : 426px,
+);
+
+@mixin media-up($pantalla){
+    @media screen and (max-width: map-get($pantallas, $pantalla)) {
+        @content;
+        
+    }
+}
 #indeximg img {
   max-height: 40rem;
+  @include media-up(mm){
+    margin-top: 40rem;
+}
+@include media-up(ml){
+    margin-top: 25rem;
+}
+@include media-up(sm){
+    margin-top: 10rem;
+}
 }
